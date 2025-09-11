@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer components {
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /*Reset base*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1 {
+    @apply text-4xl font-bold text-amber-300;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  a {
+    @apply text-blue-500 cursor-pointer hover:underline;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  /*Utilitarios*/
+
+  .text-primary {
+    @apply text-amber-300;
+  }
+
+  .text-secondary {
+    @apply text-gray-500;
+  }
+
+  .bg-primary {
+    @apply bg-amber-300;
+  }
+
+  .bg-secondary {
+    @apply bg-gray-500;
+  }
+
+  .border-primary {
+    @apply border-amber-300;
+  }
+
+  .border-secondary {
+    @apply border-gray-500;
+  }
+
+  /* --- COMPONENTES --- */
+
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium;
+  }
+
+  .btn-primary {
+    @apply text-white bg-amber-300 hover:bg-amber-400 focus:ring-2 focus:ring-offset-2 focus:ring-amber-500;
+  }
+
+  .btn-secondary {
+    @apply text-white bg-gray-500 hover:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border-2;
+  }
+
+  .btn-outline-primary {
+    @apply text-amber-300 border-amber-300 hover:bg-amber-300 hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-amber-500;
+  }
+
+  .btn-outline-secondary {
+    @apply text-gray-500 border-gray-500 hover:bg-gray-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+  }
+
+  .separator {
+    @apply border-t border-gray-300 my-4;
+  }
+
 }
