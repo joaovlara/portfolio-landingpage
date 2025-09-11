@@ -1,16 +1,17 @@
-import Image from "next/image";
+import About from '@/components/Sections/About';
+import Contact from '@/components/Sections/Contact';
+import Hero from '@/components/Sections/Hero';
+import Skills from '@/components/Sections/Skills';
+import Works from '@/components/Sections/Works';
 
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to Next.js!</h1>
-      <Image
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <Hero />
+      <About />
+      <Skills />
+      <Works />
+      <Contact />
     </main>
   );
 }
