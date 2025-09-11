@@ -25,10 +25,7 @@ export default function Hero() {
 
           <div className="flex flex-col">
             <div>
-              <h2>Title</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, <br />
-                vel nobis eos sequi aliquid tenetur, repudiandae voluptates? architecto officia!
-              </p>
+              svg icon animado
             </div>  
           </div>
 
