@@ -9,14 +9,14 @@ export const Info: Profile & {
 	socialLinks: { name: string; icon: any; url: string }[];
 	mainSkills: { name: string; color: string }[];
 } = {
-	name: "Sinan",
-	email: "abdurrahman_sinan@hotmail.com",
-	location: "Turkey",
+	name: "Teste",
+	email: "teste@hotmail.com",
+	location: "teste",
 	image: "/images/image.jpg",
-	website: "https://www.sinantokmak.com",
+	website: "https://www.teste.com",
 	role: "Full-stack developer",
 	workType: "Full-time / Freelancer",
-	portfolio: "https://www.sinantokmak.com/portfolio",
+	portfolio: "https://www.teste.com/portfolio",
 	educations: [
 		"BSc Computer Science - University of Turkey",
 		"Fullstack Bootcamp - CodeAcademy",
@@ -27,10 +27,10 @@ export const Info: Profile & {
 		{ name: "Instagram", icon: FaInstagram, url: "https://instagram.com" },
 	],
 	mainSkills: [
-		{ name: "JavaScript", color: "#f0db4f" },
-		{ name: "TypeScript", color: "#3178c6" },
+		{ name: "JS", color: "#f0db4f" },
+		{ name: "TS", color: "#3178c6" },
 		{ name: "React", color: "#61dafb" },
-		{ name: "Next.js", color: "#000000" },
+		{ name: "Next.js", color: "#3F3F3FFF" },
 	]
 };
 
