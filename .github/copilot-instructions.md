@@ -18,10 +18,13 @@ This is a Next.js + Tailwind CSS landing page template, designed for rapid devel
 - **Dependencies:** Managed via `package.json`. Tailwind config is in `postcss.config.mjs` and Next.js config in `next.config.ts`.
 
 ## Project-Specific Conventions
-- **Text & Image Updates:** Always update texts in `src/data/data.ts` and images in `public/images/`.
-- **Component Organization:** Place new UI sections in `src/components/Sections/`. For cards, use `src/components/Cards/`.
-- **Styling:** Use Tailwind CSS utility classes. Avoid custom CSS unless necessary; global styles go in `globals.css`.
-- **TypeScript:** All new code should use TypeScript. Define new types in `src/types/type.ts`.
+
+- **Centralized Data Files:** All project information and text should be organized into files in the `src/data/` folder:
+- `info.ts`: Complete developer data (profile, contacts, social media, education, etc.)
+- `work.ts`: Skills (with icons, colors, links) and projects for the portfolio
+- `data.texts.ts`: Text from all sessions and components, exported for use in the respective components
+- Other files can follow the same standard to centralize reusable data
+Import the data from these files into the components to ensure standardization and facilitate maintenance.
 
 ## Integration Points
 - **React Icons:** Installed via `react-icons` (see `package.json`).

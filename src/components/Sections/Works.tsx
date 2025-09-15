@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { categories, works } from '@/data/data';
+import { skills, projects, categories, works } from '@/data/work';
 
 export default function Works() {
     const [selected, setSelected] = useState('all');
@@ -18,8 +18,8 @@ export default function Works() {
                             key={cat.value}
                             onClick={() => setSelected(cat.value)}
                             className={`px-6 py-2 rounded-full font-semibold transition-colors duration-200 focus:outline-none text-white ${selected === cat.value
-                                    ? 'bg-[#00c9c8] text-white'
-                                    : 'bg-[#2c313a] text-gray-300 hover:bg-[#00c9c8] hover:text-white'
+                                ? 'bg-[#00c9c8] text-white'
+                                : 'bg-[#2c313a] text-gray-300 hover:bg-[#00c9c8] hover:text-white'
                                 }`}
                         >
                             {cat.label}

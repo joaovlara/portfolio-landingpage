@@ -1,4 +1,4 @@
-import { navigation, socialLinks } from "../data/info";
+import { navigation, footerTexts } from "../data/data.texts";
 
 export default function Footer() {
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
         {/* Center Section: Social Links */}
         <div className="flex-1 flex flex-col items-center">
           <div className="flex gap-6 mt-4 md:mt-0">
-            {socialLinks.map((social) => (
+            {footerTexts.socialLinks.map((social) => (
               <a
                 key={social.name}
                 href={social.url}

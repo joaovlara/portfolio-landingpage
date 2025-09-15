@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { navigation, socialLinks } from "../data/info";
+import { navigation, socialLinks } from "../data/data.texts";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

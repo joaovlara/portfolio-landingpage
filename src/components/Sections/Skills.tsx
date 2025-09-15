@@ -1,4 +1,5 @@
-import { skills } from '../../data/data';
+import { skills } from '../../data/work';
+import { skillsTexts } from '../../data/data.texts';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiJavascript } from 'react-icons/si';
 
@@ -18,8 +19,8 @@ export default function Skills() {
         <section className="min-h-screen flex justify-center items-center">
             <div className="container p-5 justify-center items-center">
                 <div className='text-center'>
-                    <h2 className="">Skills</h2>
-                    <p className="">Essas são algumas das tecnologias e habilidades que utilizo como desenvolvedor.</p>
+                    <h2 className="">{skillsTexts.title}</h2>
+                    <p className="">{skillsTexts.description}</p>
                 </div>
 
                 <div className='flex flex-col md:flex-row justify-around'>
@@ -28,7 +29,7 @@ export default function Skills() {
                 </div>
 
                 <div className="w-full mt-8">
-                    <h2 className="text-xl font-semibold mb-4 text-center">Tecnologias:</h2>
+                    <h2 className="text-xl font-semibold mb-4 text-center">{skillsTexts.techTitle}</h2>
                     <div className="flex flex-wrap gap-6 justify-center">
                         {skills.map((skill) => {
                             const Icon = icons[skill.icon as keyof typeof icons];
