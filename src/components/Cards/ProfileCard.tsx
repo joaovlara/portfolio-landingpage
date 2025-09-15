@@ -1,7 +1,7 @@
 
 import { FaEnvelope, FaMapMarkerAlt, FaBriefcase, FaGlobe, FaDownload } from "react-icons/fa";
 import { Info } from "@/data/info";
-import DowloadCV from "./Buttons/DowloadCV";
+import DowloadCV from "../Buttons/DowloadCV";
 
 export default function ProfileCard() {
 

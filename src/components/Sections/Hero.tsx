@@ -1,7 +1,8 @@
 'use client'
 
-import ProfileCard from "../ProfileCard";
+import ProfileCard from "../Cards/ProfileCard";
 import HeroText from "./HeroText";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function Hero() {
   return (
@@ -24,9 +25,15 @@ export default function Hero() {
 
           {/** Animation */}
 
-          <div className="flex flex-col w-1/4">
+          <div className="flex flex-col justify-center items-center">
             <div>
-              svg icon animado
+              <DotLottieReact
+                src="/images/WhvPfby2ki.json"
+                loop
+                autoplay
+                style={{ width: 500 }}
+                /* to do fix height */
+              />
             </div>
           </div>
 
