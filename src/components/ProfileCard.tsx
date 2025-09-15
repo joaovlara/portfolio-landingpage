@@ -1,8 +1,7 @@
 
 import { FaEnvelope, FaMapMarkerAlt, FaBriefcase, FaGlobe, FaDownload } from "react-icons/fa";
 import { Info } from "@/data/info";
-
-import DowloadCV from "../Buttons/DowloadCV";
+import DowloadCV from "./Buttons/DowloadCV";
 
 export default function ProfileCard() {
 
@@ -22,7 +21,7 @@ export default function ProfileCard() {
   const skill = Info.mainSkills;
 
   return (
-    <section className="relative bg-[#2c3136] rounded-tl-[120px] rounded-br-[40px] rounded-tr-[8px] rounded-bl-[8px] border-4 border-[#17C8E0] w-full max-w-lg mx-auto shadow-2xl p-3">
+    <section className="relative bg-[#2c3136] rounded-tl-[120px] rounded-br-[40px] rounded-tr-[8px] rounded-bl-[8px] border-4 border-[#17C8E0] max-w-lg mx-auto shadow-2xl p-3">
 
       {/* Conteúdo do card */}
       <div className="flex flex-col justify-end p-8 space-y-8 h-full">

@@ -6,9 +6,14 @@ export const aboutTexts = {
 };
 
 export const heroTexts = {
-  title: "Bem-vindo ao meu portfólio!",
-  subtitle: "Desenvolvimento web moderno, design responsivo e soluções criativas.",
-  cta: "Veja meus projetos",
+  title: "Hey I’m Dev, Full-Stack Developer!",
+  subtitle: "I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done",
+  cta: "Let’s Talk",
+
+
+
+
+  
 };
 
 export const contactTexts = {
