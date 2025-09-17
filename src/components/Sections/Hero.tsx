@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section className="min-h-screen flex flex-col items-center justify-center">
       <div className="container p-9 flex justify-around">
 
         <div className="flex-col justify-center items-center max-w-1/2">
@@ -19,8 +19,13 @@ export default function Hero() {
         <div className="flex max-w-1/2">
           <Image src="/images/image.jpg" alt="Hero Image" width={300} height={300} className="rounded-full" />
         </div>
-        
+
       </div>
+
+      <div>
+        main skills
+      </div>
+
     </section>
   )
 }
