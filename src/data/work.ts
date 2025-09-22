@@ -38,6 +38,14 @@ export const projects: Project[] = [
         skills: ["React", "TypeScript"],
         link: "https://example.com/mobileui",
     },
+    {
+        id: 4,
+        title: "Modern Web Development",
+        description: "Desenvolvimento web moderno com as últimas tecnologias.",
+        image: "/images/pattern.png",
+        skills: ["Next.js", "Tailwind", "TypeScript"],
+        link: "https://example.com/modernweb",
+    },
 ];
 
 export const categories: Category[] = [
@@ -66,5 +74,10 @@ export const works: Work[] = [
         category: ['ui', 'ux'],
         image: '/images/logo.png',
     },
-
+    {
+        id: 4,
+        title: 'Modern Web Development',
+        category: ['web', 'ui'],
+        image: '/images/pattern.png',
+    },
 ];

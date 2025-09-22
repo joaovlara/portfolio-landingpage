@@ -21,11 +21,7 @@ export default function Hero() {
         </div>
 
       </div>
-
-      <div>
-        main skills
-      </div>
-
+      
     </section>
   )
 }
