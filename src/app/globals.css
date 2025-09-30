@@ -1,29 +1,30 @@
 @import "tailwindcss";
 
 @theme {
+  --color-primary-100: #b55327;
+  --color-primary-200: #8c2a2a;
 
-  --color-primary-100: #B55327;
-  --color-primary-200: #8C2A2A;
+  --color-secondary-100: #b4b832;
+  --color-secondary-200: #b4b802;
 
-  --color-secondary-100: #B4B832;
-  --color-secondary-200: #B4B802;
+  --color-accent-100: #1c7b7a;
+  --color-accent-200: #17c8e0;
 
-  --color-accent-100: #1C7B7A;
-  --color-accent-200: #17C8E0;
-
-  --color-dark-100: #4B4B4B;
+  --color-dark-100: #4b4b4b;
   --color-dark-200: #333333;
   --color-dark-300: #000000;
+  --color-main-gray-300: #797979;
 
-  --color-light-100: #FFFFFF;
-  --color-light-200: #F2F2F2;
-  --color-light-300: #E0E0E0;
+  --color-light-100: #ffffff;
+  --color-light-200: #f2f2f2;
+  --color-light-300: #e0e0e0;
+
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-family-secondary: 'Open Sans', sans-serif;
 
 }
 
-
 @layer components {
-
   /*Reset base*/
 
   h1 {
@@ -47,7 +48,7 @@
   }
 
   a {
-    @apply text-blue-500 cursor-pointer hover:underline;
+    @apply text-stone-300 cursor-pointer hover:text-[var(--color-accent-200)];
   }
 
   button {
@@ -110,12 +111,14 @@
     @apply border-t border-gray-300 my-4;
   }
 
-  /* Text clamp utilities */
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  /* Fontes Customizadas */
+  .font-bigshot {
+    font-family: 'Bigshot One', cursive;
   }
+
+  .font-mono {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
 
 }

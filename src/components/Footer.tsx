@@ -11,7 +11,7 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="flex items-center gap-2 text-lg hover:text-gray-400 transition-colors"
+                className="flex items-center gap-2 text-lg transition-colors"
               >
                 {idx === 0 && (
                   <span className="inline-block"><svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 11h1v6a1 1 0 001 1h3a1 1 0 001-1v-3h2v3a1 1 0 001 1h3a1 1 0 001-1v-6h1a1 1 0 00.707-1.707l-7-7z" /></svg></span>
@@ -37,7 +37,7 @@ export default function Footer() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-700 hover:bg-gray-600 rounded-full p-3 transition-colors"
+                className="bg-stone-700 hover:bg-stone-600 rounded-full p-3 transition-colors"
                 aria-label={social.name}
               >
                 <social.icon size={24} />

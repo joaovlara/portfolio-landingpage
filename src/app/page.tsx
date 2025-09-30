@@ -9,11 +9,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Skills />
       <About />
-      <Works />
-      <CalltoAction /> 
-      {/* <Contact /> */}
+
     </main>
   );
 }
