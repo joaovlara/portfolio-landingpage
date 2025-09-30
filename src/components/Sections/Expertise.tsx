@@ -5,11 +5,11 @@ export default function Expertise() {
     <section className="relative min-h-screen flex flex-col items-center justify-center py-16 px-4 md:px-8">
       {/* Expertise Header */}
       <div className="max-w-6xl w-full mb-16">
-        <h3 className="uppercase text-center text-sm tracking-wider text-amber-500 font-medium mb-8">
+        <h3 className="">
           EXPERTISE
         </h3>
 
-        <h2 className="text-center text-4xl md:text-5xl font-light leading-tight max-w-4xl mx-auto">
+        <h2 className="">
           Visual Design, Branding Identity, UI Design, 
           Product Design, Prototyping, Illustration
         </h2>
@@ -19,14 +19,14 @@ export default function Expertise() {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
         {/* Experience Column */}
         <div className="col-span-1">
-          <h3 className="uppercase text-sm tracking-wider text-amber-500 font-medium mb-10">
+          <h3 className="uppercase text-sm tracking-wider textcolor-primary-500 font-medium mb-10">
             EXPERIENCE
           </h3>
 
           {/* Experience Item 1 */}
           <div className="mb-12">
             <div className="flex items-start mb-3">
-              <span className="text-amber-500 mr-3 text-xl">•</span>
+              <span className="textcolor-primary-500 mr-3 text-xl">•</span>
               <div>
                 <h4 className="text-xl font-normal mb-1">Dropbox</h4>
                 <p className="text-gray-300">Product Designer</p>
@@ -45,7 +45,7 @@ export default function Expertise() {
           {/* Experience Item 2 */}
           <div className="mb-12">
             <div className="flex items-start mb-3">
-              <span className="text-amber-500 mr-3 text-xl">•</span>
+              <span className="textcolor-primary-500 mr-3 text-xl">•</span>
               <div>
                 <h4 className="text-xl font-normal mb-1">Microsoft</h4>
                 <p className="text-gray-300">Frontend Developer</p>
@@ -64,14 +64,14 @@ export default function Expertise() {
 
         {/* Education Column */}
         <div className="col-span-1">
-          <h3 className="uppercase text-sm tracking-wider text-amber-500 font-medium mb-10">
+          <h3 className="uppercase text-sm tracking-wider textcolor-primary-500 font-medium mb-10">
             EDUCATION
           </h3>
 
           {/* Education Item 1 */}
           <div className="mb-12">
             <div className="flex items-start mb-3">
-              <span className="text-amber-500 mr-3 text-xl">•</span>
+              <span className="textcolor-primary-500 mr-3 text-xl">•</span>
               <div>
                 <h4 className="text-xl font-normal mb-1">University of Life</h4>
                 <p className="text-gray-300">Master in Graphic Design</p>
@@ -90,7 +90,7 @@ export default function Expertise() {
           {/* Education Item 2 */}
           <div className="mb-12">
             <div className="flex items-start mb-3">
-              <span className="text-amber-500 mr-3 text-xl">•</span>
+              <span className="textcolor-primary-500 mr-3 text-xl">•</span>
               <div>
                 <h4 className="text-xl font-normal mb-1">School of Cool Designers</h4>
                 <p className="text-gray-300">B.A. Degree in Graphic Design</p>
@@ -109,7 +109,7 @@ export default function Expertise() {
 
         {/* Skills Column (Third column) */}
         <div className="col-span-1">
-          <h3 className="uppercase text-sm tracking-wider text-amber-500 font-medium mb-10">
+          <h3 className="uppercase text-sm tracking-wider textcolor-primary-500 font-medium mb-10">
             SKILLS
           </h3>
 

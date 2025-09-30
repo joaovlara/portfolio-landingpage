@@ -38,9 +38,7 @@ export default function Portfolio() {
   return (
     <section className="py-20 px-4 md:px-8 ">
       <div className="max-w-7xl mx-auto">
-        <h2 className="uppercase text-center text-xs tracking-widest text-gray-400 mb-12">
-          PORTFOLIO
-        </h2>
+        <h2 className="uppercase">PORTFOLIO</h2>
 
         {/* Portfolio grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px">
@@ -60,7 +58,7 @@ export default function Portfolio() {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
                   <div className="text-center p-6">
-                    <span className="text-sm text-amber-500 block mb-2">{project.category}</span>
+                    <span className="text-sm textcolor-primary-500 block mb-2">{project.category}</span>
                     <h3 className="text-white text-xl mb-8">{project.title}</h3>
                     
                     {/* Plus icon */}
@@ -68,7 +66,7 @@ export default function Portfolio() {
                     
                     <Link 
                       href={project.link}
-                      className="inline-block border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
+                      className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
                     >
                       Ver Projeto
                     </Link>

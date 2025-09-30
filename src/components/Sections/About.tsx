@@ -22,20 +22,20 @@ export default function About() {
             
             {/* Technology icons column - absolute positioned on top right of image */}
             <div className="absolute top-7 left-7 flex flex-col gap-5">
-              <FaReact className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <FaNodeJs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <FaJs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <FaHtml5 className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <FaCss3Alt className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <SiTailwindcss className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
-              <SiNextdotjs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <FaReact className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <FaNodeJs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <FaJs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <FaHtml5 className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <FaCss3Alt className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <SiTailwindcss className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              <SiNextdotjs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
             </div>
           </div>
         </div>
 
         {/* Right side content */}
         <div className="w-full md:w-1/2 space-y-6 md:pl-4">
-          <h2 className="uppercase text-amber-500 tracking-wider text-sm font-medium border-l-2 border-amber-500 pl-3">ABOUT</h2>
+          <h2 className="uppercase textcolor-primary tracking-wider text-sm font-medium border-l-2 border-amber-500 pl-3">ABOUT</h2>
           
           <p className="text-gray-200 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -44,7 +44,7 @@ export default function About() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           
-          <button className="uppercase tracking-wider text-amber-500 bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8 text-sm">
+          <button className="uppercase tracking-wider textcolor-primary bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8 text-sm">
             DOWNLOAD CV
           </button>
         </div>
