@@ -112,10 +112,6 @@
     @apply border-t border-gray-300 my-4;
   }
 
-.hover-accent:hover {
-    color: var(--color-accent-200);
-  }
-
   /* Fontes Customizadas */
   .font-bigshot {
     font-family: 'Bigshot One', cursive;
