@@ -22,13 +22,13 @@ export default function About() {
             
             {/* Technology icons column - absolute positioned on top right of image */}
             <div className="absolute top-7 left-7 flex flex-col gap-5">
-              <FaReact className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <FaNodeJs className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <FaJs className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <FaHtml5 className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <FaCss3Alt className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <SiTailwindcss className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
-              <SiNextdotjs className="text-stone-500 text-7xl hover:text-amber-500 transition-colors" />
+              <FaReact className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <FaNodeJs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <FaJs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <FaHtml5 className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <FaCss3Alt className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <SiTailwindcss className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
+              <SiNextdotjs className="text-stone-500 text-7xl hover:text-accent-200 transition-colors cursor-pointer" />
             </div>
           </div>
         </div>

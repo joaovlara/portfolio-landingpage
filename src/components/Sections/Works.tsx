@@ -36,7 +36,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-black">
+    <section className="py-20 px-4 md:px-8 ">
       <div className="max-w-7xl mx-auto">
         <h2 className="uppercase text-center text-xs tracking-widest text-gray-400 mb-12">
           PORTFOLIO

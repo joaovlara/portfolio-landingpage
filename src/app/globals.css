@@ -33,6 +33,7 @@
 
   h2 {
     @apply text-3xl font-bold;
+    font-family: 'Bigshot One', cursive;
   }
 
   h3 {
@@ -48,7 +49,7 @@
   }
 
   a {
-    @apply text-stone-300 cursor-pointer hover:text-[var(--color-accent-200)];
+    @apply text-stone-300 cursor-pointer hover:text-[var(--color-primary-100)];
   }
 
   button {
@@ -57,11 +58,11 @@
 
   /*Utilitarios*/
 
-  .text-primary {
+  .textcolor-primary {
     color: var(--color-primary-100);
   }
 
-  .text-secondary {
+  .textcolor-secondary {
     @apply text-gray-500;
   }
 
@@ -109,6 +110,10 @@
 
   .separator {
     @apply border-t border-gray-300 my-4;
+  }
+
+.hover-accent:hover {
+    color: var(--color-accent-200);
   }
 
   /* Fontes Customizadas */

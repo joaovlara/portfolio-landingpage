@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Expertise() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center py-16 px-4 md:px-8 bg-black text-white">
+    <section className="relative min-h-screen flex flex-col items-center justify-center py-16 px-4 md:px-8">
       {/* Expertise Header */}
       <div className="max-w-6xl w-full mb-16">
         <h3 className="uppercase text-center text-sm tracking-wider text-amber-500 font-medium mb-8">
