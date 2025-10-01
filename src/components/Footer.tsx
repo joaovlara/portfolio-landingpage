@@ -2,7 +2,7 @@ import { navigation, footerTexts } from "../data/data.texts";
 
 export default function Footer() {
   return (
-    <footer className="py-8">
+    <footer className="py-8 bg-stone-950">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Left Section */}
         <div className="flex-1 flex flex-col items-center md:items-start mb-6 md:mb-0">

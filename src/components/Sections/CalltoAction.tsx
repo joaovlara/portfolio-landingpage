@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="bg-stone-900 min-h-screen flex flex-col items-center justify-center">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-t from-stone-950">
       <div className="container p-5 space-y-3">
           <h2 className="textcolor-primary mb-10">
           Get in touch</h2>
@@ -16,7 +16,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
             {/* Coluna 1 - Contato */}
             <div>
-              <h4 className="uppercase tracking-wider mb-4">
+              <h4 className="uppercase tracking-wider mb-4"> 
                 Reach me at
               </h4>
               <div className="space-y-2">

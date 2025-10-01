@@ -66,7 +66,7 @@ export default function Header() {
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
-        className="lg:hidden bg-stone-900"
+        className="lg:hidden"
       >
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-3 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10 bg-stone-900">
           <div className="flex items-center justify-between">
