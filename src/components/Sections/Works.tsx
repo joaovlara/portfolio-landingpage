@@ -51,12 +51,8 @@ export default function Portfolio() {
     <section className="bg-stone-900 min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
         <div className="">
-          <h3 className="text-2xl md:text-4xl textcolor-primary mb-10">
-            PORTFÓLIO
-          </h3>
-          <h2 className="text-lg mb-10">
-            Conheça alguns dos meus trabalhos recentes
-          </h2>
+          <h2 className="">PORTFÓLIO</h2>
+          <h3 className="mb-10">Conheça alguns dos meus trabalhos recentes</h3>
         </div>
         {/* Portfolio grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px">
@@ -83,13 +79,13 @@ export default function Portfolio() {
                     ${activeCardId === project.id ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100'}`}
                 >
                   <div className="text-center p-6">
-                    <span className="text-sm textcolor-primary-500 block mb-2">
+                    <span className="textcolor-primary-500 block mb-2">
                       {project.category}
                     </span>
-                    <h3 className="text-xl mb-8">{project.title}</h3>
+                    <h3 className="mb-8">{project.title}</h3>
 
                     {/* Plus icon */}
-                    <span className="text-4xl block mb-8">+</span>
+                    <span className="block mb-8">+</span>
 
                     <Link
                       href={project.link}

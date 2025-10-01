@@ -35,7 +35,8 @@ export default function About() {
 
         {/* Right side content */}
         <div className="w-full md:w-1/2 space-y-6 md:pl-4">
-          <h2 className="uppercase textcolor-primary tracking-wider border-l-2 border-amber-500 pl-3">ABOUT</h2>
+
+          <h2 className="title-section">ABOUT</h2>
           
           <p className="leading-relaxed text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -44,7 +45,7 @@ export default function About() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           
-          <button className="uppercase tracking-wider textcolor-primary bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8 text-sm">
+          <button className="uppercase tracking-wider textcolor-primary bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8">
             DOWNLOAD CV
           </button>
         </div>
