@@ -35,9 +35,9 @@ export default function About() {
 
         {/* Right side content */}
         <div className="w-full md:w-1/2 space-y-6 md:pl-4">
-          <h2 className="uppercase textcolor-primary tracking-wider text-sm font-medium border-l-2 border-amber-500 pl-3">ABOUT</h2>
+          <h2 className="uppercase textcolor-primary tracking-wider border-l-2 border-amber-500 pl-3">ABOUT</h2>
           
-          <p className="text-gray-200 leading-relaxed">
+          <p className="text-gray-200 leading-relaxed text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in

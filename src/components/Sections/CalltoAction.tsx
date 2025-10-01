@@ -2,11 +2,12 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="py-24 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="">Get in touch</h2>
+    <section className="bg-stone-900 min-h-screen flex flex-col items-center justify-center">
+      <div className="container p-5 space-y-3">
+          <h2 className="text-2xl md:text-4xl font-bold font-bigshot textcolor-primary mb-10">
+          Get in touch</h2>
 
-        <div className="max-w-4xl">
+        <div className="">
           <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight mb-16">
             I love to hear from you. Whether you have a question or just want to
             chat about design, tech & art — shoot me a message.

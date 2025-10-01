@@ -49,3 +49,59 @@ export const footerTexts = {
   copyright: "© 2025 Sinan. Todos os direitos reservados.",
   socialLinks,
 };
+
+export const expertiseTexts = {
+  title: "EXPERTISE",
+  subtitle: "Visual Design, Branding Identity, UI Design, Product Design, Prototyping, Illustration",
+  experience: {
+    title: "EXPERIENCE",
+    items: [
+      {
+        company: "Dropbox",
+        position: "Product Designer",
+        period: "AUGUST 2019 - PRESENT",
+        description: "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi."
+      },
+      {
+        company: "Microsoft",
+        position: "Frontend Developer",
+        period: "AUGUST 2016 - JULY 2019",
+        description: "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi."
+      }
+    ]
+  },
+  education: {
+    title: "EDUCATION",
+    items: [
+      {
+        institution: "University of Life",
+        degree: "Master in Graphic Design",
+        period: "APRIL 2015",
+        description: "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi."
+      },
+      {
+        institution: "School of Cool Designers",
+        degree: "B.A. Degree in Graphic Design",
+        period: "AUGUST 2012",
+        description: "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi."
+      }
+    ]
+  },
+  skills: {
+    title: "SKILLS",
+    categories: [
+      {
+        title: "Design",
+        skills: ["UI/UX Design", "Wireframing", "Prototyping", "User Research", "Visual Design"]
+      },
+      {
+        title: "Development",
+        skills: ["HTML/CSS", "JavaScript", "React", "Tailwind CSS", "Next.js"]
+      },
+      {
+        title: "Tools",
+        skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "VS Code"]
+      }
+    ]
+  }
+};

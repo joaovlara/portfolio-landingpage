@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Portfolio() {
   // Portfolio projects data
@@ -9,64 +12,89 @@ export default function Portfolio() {
       title: "Social Media",
       category: "Social Media",
       image: "/images/Image.png",
-      link: "/projects/social-media"
+      link: "/projects/social-media",
     },
     {
       id: 2,
       title: "Tatiana Nascimento Heim",
       category: "Branding",
       image: "/images/Image.png",
-      link: "/projects/tatiana-nascimento"
+      link: "/projects/tatiana-nascimento",
     },
     {
       id: 3,
       title: "Maria Lara Advocacia",
       category: "Web Design",
       image: "/images/Image.png",
-      link: "/projects/maria-lara"
+      link: "/projects/maria-lara",
     },
     {
       id: 4,
       title: "Social Media",
       category: "Social Media",
       image: "/images/Image.png",
-      link: "/projects/social-media"
+      link: "/projects/social-media",
     },
     // Add more projects as needed
   ];
 
-  return (
-    <section className="py-20 px-4 md:px-8 ">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="uppercase">PORTFOLIO</h2>
+  // State to track which card is clicked on mobile
+  const [activeCardId, setActiveCardId] = useState<number | null>(null);
 
+  // Handle card click on mobile
+  const handleCardClick = (projectId: number) => {
+    // Toggle active state (close if clicking the same card again)
+    setActiveCardId(activeCardId === projectId ? null : projectId);
+  };
+
+  return (
+    <section className="bg-stone-900 min-h-screen flex flex-col items-center justify-center">
+      <div className="container p-5 space-y-3">
+        <div className="">
+          <h3 className="text-2xl md:text-4xl font-bold font-bigshot textcolor-primary mb-10">
+            PORTFÓLIO
+          </h3>
+          <h2 className="text-lg font-mono text-gray-300 mb-10">
+            Conheça alguns dos meus trabalhos recentes
+          </h2>
+        </div>
         {/* Portfolio grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px">
           {projects.map((project) => (
-            <div key={project.id} className="relative group">
-              {/* Project container with overlay on hover */}
+            <div 
+              key={project.id} 
+              className="relative group"
+              onClick={() => handleCardClick(project.id)}
+            >
+              {/* Project container with overlay on hover/click */}
               <div className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
                 {/* Project image */}
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   className="transition-transform duration-500 group-hover:scale-105"
                 />
-                
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
+
+                {/* Overlay on hover (desktop) or click (mobile) */}
+                <div 
+                  className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center
+                    ${activeCardId === project.id ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100'}`}
+                >
                   <div className="text-center p-6">
-                    <span className="text-sm textcolor-primary-500 block mb-2">{project.category}</span>
+                    <span className="text-sm textcolor-primary-500 block mb-2">
+                      {project.category}
+                    </span>
                     <h3 className="text-white text-xl mb-8">{project.title}</h3>
-                    
+
                     {/* Plus icon */}
                     <span className="text-white text-4xl block mb-8">+</span>
-                    
-                    <Link 
+
+                    <Link
                       href={project.link}
                       className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
+                      onClick={(e) => e.stopPropagation()} // Prevent card click handler from firing when clicking the link
                     >
                       Ver Projeto
                     </Link>

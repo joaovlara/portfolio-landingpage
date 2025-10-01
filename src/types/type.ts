@@ -43,3 +43,39 @@ export type Work = {
   category: string[];
   image: string;
 };
+
+export type ExperienceItem = {
+  company: string;
+  position: string;
+  period: string;
+  description: string;
+};
+
+export type EducationItem = {
+  institution: string;
+  degree: string;
+  period: string;
+  description: string;
+};
+
+export type SkillCategory = {
+  title: string;
+  skills: string[];
+};
+
+export type ExpertiseSection = {
+  title: string;
+  subtitle: string;
+  experience: {
+    title: string;
+    items: ExperienceItem[];
+  };
+  education: {
+    title: string;
+    items: EducationItem[];
+  };
+  skills: {
+    title: string;
+    categories: SkillCategory[];
+  };
+};
