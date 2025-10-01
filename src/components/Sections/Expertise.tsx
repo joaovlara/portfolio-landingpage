@@ -5,6 +5,8 @@ import type {
   EducationItem,
   SkillCategory,
 } from "@/types/type";
+import FadeUpAnimation from "@/components/Animation/FadeUpAnimation";
+import SequentialFadeUp from "@/components/Animation/SequentialFadeUp";
 
 export default function Expertise() {
   const { title, subtitle, experience, education, skills } = expertiseTexts;
@@ -13,12 +15,14 @@ export default function Expertise() {
     <section id="expertise" className="min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
         {/* Expertise Header */}
-        <div className="">
-          <h2 className="">{title}</h2>
-          <h3 className="mb-10">{subtitle}</h3>
-        </div>
+        <FadeUpAnimation>
+          <div className="">
+            <h2 className="">{title}</h2>
+            <h3 className="mb-10">{subtitle}</h3>
+          </div>
+        </FadeUpAnimation>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
+        <SequentialFadeUp className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
           {/* Experience Column */}
           <div className="col-span-1">
             <p className="uppercase tracking-wider textcolor-primary-500 mb-10 font-semibold">
@@ -93,7 +97,7 @@ export default function Expertise() {
               </div>
             ))}
           </div>
-        </div>
+        </SequentialFadeUp>
       </div>
     </section>
   );

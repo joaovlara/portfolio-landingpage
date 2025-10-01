@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation, socialLinks } from "@/data/data.texts";
 import type { NavigationItem, SocialLink } from "@/types/type";
+import HeaderAnimation from "./Animation/HeaderAnimation";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,10 +29,11 @@ export default function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-50 text-stone-500">
       {/* Desktop menu */}
-      <nav
-        aria-label="Global"
-        className="flex items-center justify-between md:p-12 p-8 border-b"
-      >
+      <HeaderAnimation>
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between md:p-12 p-8 border-b"
+        >
         <div className="flex lg:flex-1">
           <a 
             href="#hero" 
@@ -83,6 +85,7 @@ export default function Header() {
           })}
         </div>
       </nav>
+      </HeaderAnimation>
 
       {/* Mobile menu */}
       <Dialog
