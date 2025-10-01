@@ -2,7 +2,7 @@ import { navigation, footerTexts } from "../data/data.texts";
 
 export default function Footer() {
   return (
-    <footer className=" text-white py-8">
+    <footer className="py-8">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Left Section */}
         <div className="flex-1 flex flex-col items-center md:items-start mb-6 md:mb-0">
@@ -48,7 +48,7 @@ export default function Footer() {
 
         {/* Right Section: Terms/Privacy */}
         <div className="flex-1 flex justify-center md:justify-end mt-6 md:mt-0">
-          <div className="text-sm text-gray-400">
+          <div className="text-sm">
             Terms of Service - Privacy Policy
           </div>
         </div>

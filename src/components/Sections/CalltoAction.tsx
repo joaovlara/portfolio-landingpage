@@ -4,11 +4,11 @@ export default function Contact() {
   return (
     <section className="bg-stone-900 min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
-          <h2 className="text-2xl md:text-4xl font-bold font-bigshot textcolor-primary mb-10">
+          <h2 className="text-2xl md:text-4xl textcolor-primary mb-10">
           Get in touch</h2>
 
         <div className="">
-          <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight mb-16">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl leading-tight mb-16">
             I love to hear from you. Whether you have a question or just want to
             chat about design, tech & art — shoot me a message.
           </h3>
@@ -16,10 +16,10 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
             {/* Coluna 1 - Contato */}
             <div>
-              <h4 className="uppercase text-white tracking-wider text-sm font-medium mb-4">
+              <h4 className="uppercase tracking-wider text-sm mb-4">
                 Reach me at
               </h4>
-              <div className="text-gray-400 space-y-2">
+              <div className="space-y-2">
                 <p>sayhello@luther.com</p>
                 <p>+197 543 2345</p>
               </div>
@@ -27,10 +27,10 @@ export default function Contact() {
 
             {/* Coluna 2 - Social */}
             <div>
-              <h4 className="uppercase text-white tracking-wider text-sm font-medium mb-4">
+              <h4 className="uppercase tracking-wider text-sm mb-4">
                 Social
               </h4>
-              <div className="text-gray-400 space-y-2">
+              <div className="space-y-2">
                 <p>Behance, Dribbble, Twitter,</p>
                 <p>Instagram, Github</p>
               </div>
