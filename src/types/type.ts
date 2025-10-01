@@ -79,3 +79,14 @@ export type ExpertiseSection = {
     categories: SkillCategory[];
   };
 };
+
+export type NavigationItem = {
+  name: string;
+  href: string;
+};
+
+export type SocialLink = {
+  name: string;
+  icon: React.ElementType;
+  url: string;
+};

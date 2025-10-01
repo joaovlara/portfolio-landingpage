@@ -10,7 +10,7 @@ export default function Expertise() {
   const { title, subtitle, experience, education, skills } = expertiseTexts;
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center">
+    <section id="expertise" className="min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
         {/* Expertise Header */}
         <div className="">

@@ -1,19 +1,17 @@
 import Image from "next/image";
-// Importando ícones - substitua por seus ícones preferidos
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { aboutSection } from "@/data/data.texts";
 
 export default function About() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-16 px-4 md:px-8">
+    <section id="about" className="relative min-h-screen flex items-center justify-center py-16 px-4 md:px-8">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
         {/* Left side image container with relative positioning */}
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* The portrait image */}
           <div className="relative h-[700px] w-[600px] md:h-[800px] md:w-[650px]">
             <Image 
-              src="/images/about-photo.jpg"
-              alt="Profile photo"
+              src={aboutSection.image.src}
+              alt={aboutSection.image.alt}
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               priority
@@ -22,13 +20,16 @@ export default function About() {
             
             {/* Technology icons column - absolute positioned on top right of image */}
             <div className="absolute top-7 left-7 flex flex-col gap-5">
-              <FaReact className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <FaNodeJs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <FaJs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <FaHtml5 className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <FaCss3Alt className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <SiTailwindcss className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
-              <SiNextdotjs className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" />
+              {aboutSection.techIcons.map((tech, index) => {
+                const IconComponent = tech.icon;
+                return (
+                  <IconComponent 
+                    key={index}
+                    title={tech.name}
+                    className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -36,18 +37,19 @@ export default function About() {
         {/* Right side content */}
         <div className="w-full md:w-1/2 space-y-6 md:pl-4">
 
-          <h2 className="title-section">ABOUT</h2>
+          <h2 className="title-section">{aboutSection.title}</h2>
           
           <p className="leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            {aboutSection.description}
           </p>
           
-          <button className="uppercase tracking-wider textcolor-primary bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8">
-            DOWNLOAD CV
-          </button>
+          <a 
+            href={aboutSection.button.link}
+            className="inline-block uppercase tracking-wider textcolor-primary bg-zinc-800 hover:bg-zinc-700 transition-colors py-3 px-8"
+            download
+          >
+            {aboutSection.button.text}
+          </a>
         </div>
       </div>
     </section>

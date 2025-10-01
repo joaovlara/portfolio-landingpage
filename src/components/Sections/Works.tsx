@@ -3,40 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { workSection } from "@/data/data.texts";
 
 export default function Portfolio() {
-  // Portfolio projects data
-  const projects = [
-    {
-      id: 1,
-      title: "Social Media",
-      category: "Social Media",
-      image: "/images/Image.png",
-      link: "/projects/social-media",
-    },
-    {
-      id: 2,
-      title: "Tatiana Nascimento Heim",
-      category: "Branding",
-      image: "/images/Image.png",
-      link: "/projects/tatiana-nascimento",
-    },
-    {
-      id: 3,
-      title: "Maria Lara Advocacia",
-      category: "Web Design",
-      image: "/images/Image.png",
-      link: "/projects/maria-lara",
-    },
-    {
-      id: 4,
-      title: "Social Media",
-      category: "Social Media",
-      image: "/images/Image.png",
-      link: "/projects/social-media",
-    },
-    // Add more projects as needed
-  ];
+  const { title, subtitle, buttonText, projects } = workSection;
 
   // State to track which card is clicked on mobile
   const [activeCardId, setActiveCardId] = useState<number | null>(null);
@@ -48,11 +18,11 @@ export default function Portfolio() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center">
+    <section id="portfolio" className="min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
         <div className="">
-          <h2 className="">PORTFÓLIO</h2>
-          <h3 className="mb-10">Conheça alguns dos meus trabalhos recentes</h3>
+          <h2 className="">{title}</h2>
+          <h3 className="mb-10">{subtitle}</h3>
         </div>
         {/* Portfolio grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px">
@@ -63,7 +33,7 @@ export default function Portfolio() {
               onClick={() => handleCardClick(project.id)}
             >
               {/* Project container with overlay on hover/click */}
-              <div className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
+              <div className="relative h-[300px] md:h-[300px] w-full overflow-hidden">
                 {/* Project image */}
                 <Image
                   src={project.image}
@@ -92,7 +62,7 @@ export default function Portfolio() {
                       className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
                       onClick={(e) => e.stopPropagation()} // Prevent card click handler from firing when clicking the link
                     >
-                      Ver Projeto
+                      {buttonText}
                     </Link>
                   </div>
                 </div>

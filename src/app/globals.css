@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Scroll suave global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset para compensar header fixo */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 @theme {
   --color-primary-100: #b55327;
   --color-primary-200: #8c2a2a;
