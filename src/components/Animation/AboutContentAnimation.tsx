@@ -11,7 +11,7 @@ interface AboutContentAnimationProps {
 const AboutContentAnimation = ({ children, className = '' }: AboutContentAnimationProps) => {
   return (
     <motion.div
-      initial={{ x: 100, opacity: 0 }}
+      initial={{ x: 50, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ 
@@ -19,7 +19,7 @@ const AboutContentAnimation = ({ children, className = '' }: AboutContentAnimati
         ease: "easeOut",
         delay: 0.3 // Aparece depois da imagem
       }}
-      className={className}
+      className={`overflow-hidden ${className}`}
     >
       {children}
     </motion.div>
