@@ -43,7 +43,7 @@ section[id] {
 
   h2 {
     @apply text-3xl font-bold text-[var(--color-primary-100)] border-l-2 border-amber-500 pl-3 mb-10;
-    font-family: 'Bigshot One', cursive;
+    font-family: 'Bigshot One';
   }
 
   h3 {
