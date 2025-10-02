@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -14,7 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>
+      <body className="bg-stone-900 text-stone-300">
+        <Header />
         {children}
         <Footer />
       </body>
