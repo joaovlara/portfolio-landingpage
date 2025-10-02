@@ -11,7 +11,8 @@ Este projeto é um template de estrutura para a criação de landing pages utili
 - **TypeScript** 5 - Superset do JavaScript com tipagem estática.
 - **Tailwind CSS** 4 - Framework CSS para estilização rápida.
 
-## Estrutura do Projeto
+## Estrutura do Projeto 
+
 
 ```
 template/
