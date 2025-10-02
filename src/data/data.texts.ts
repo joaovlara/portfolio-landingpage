@@ -1,4 +1,4 @@
-// Centraliza todos os textos das sessões e componentes do projeto
+// Centraliza todos os textos das sessoes e componentes do projeto
 
 import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -82,8 +82,8 @@ export const expertiseTexts = {
 };
 
 export const workSection = {
-  title: "PORTFÓLIO",
-  subtitle: "Conheça alguns dos meus trabalhos recentes",
+  title: "PORTFOLIO",
+  subtitle: "Conheca alguns dos meus trabalhos recentes",
   buttonText: "Ver Projeto",
   projects: [
     {
@@ -137,10 +137,10 @@ export const CtaSection = {
 };
 
 export const navigation = [
-  { name: "Início", href: "#hero" },
+  { name: "Inicio", href: "#hero" },
   { name: "Sobre", href: "#about" },
   { name: "Expertise", href: "#expertise" },
-  { name: "Portfólio", href: "#portfolio" },
+  { name: "Portfolio", href: "#portfolio" },
   { name: "Contato", href: "#contact" },
 ];
 
