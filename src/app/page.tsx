@@ -6,6 +6,7 @@ import Expertise from "@/components/Sections/Expertise";
 import Works from "@/components/Sections/Works";
 import CalltoAction from "@/components/Sections/CalltoAction";
 import { motion } from "framer-motion";
+import Particles from "@/components/Animation/Particles";
 
 export default function Home() {
   // Variante de animação para as seções
@@ -16,6 +17,16 @@ export default function Home() {
 
   return (
     <main>
+      <Particles
+        particleColors={["#5C5C5CFF", "#B4B4B4FF"]}
+        particleCount={700}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={30}
+        moveParticlesOnHover={false}
+        alphaParticles={true}
+        disableRotation={false}
+      />
       <Hero />
       <motion.div
         initial="hidden"
