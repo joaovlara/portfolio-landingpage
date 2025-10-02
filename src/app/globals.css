@@ -125,7 +125,7 @@ section[id] {
 
   /* Fontes Customizadas */
   .font-bigshot {
-    font-family: 'Bigshot One', cursive;
+    font-family: 'Bigshot One', sans-serif;
   }
 
   .font-mono {
