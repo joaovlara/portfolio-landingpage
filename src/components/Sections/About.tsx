@@ -11,7 +11,7 @@ export default function About() {
         {/* Left side image container with relative positioning */}
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* The portrait image */}
-          <AboutImageAnimation className="relative h-[500px] w-full max-w-[400px] sm:h-[600px] sm:max-w-[500px] md:h-[800px] md:w-[650px]">
+          <AboutImageAnimation className="relative h-[700px] w-[600px] md:h-[800px] md:w-[650px]">
             <Image 
               src={aboutSection.image.src}
               alt={aboutSection.image.alt}
@@ -22,14 +22,14 @@ export default function About() {
             />
             
             {/* Technology icons column - absolute positioned on top right of image */}
-            <div className="absolute top-4 left-4 sm:top-7 sm:left-7 flex flex-col gap-3 sm:gap-5">
+            <div className="absolute top-7 left-7 flex flex-col gap-5">
               {aboutSection.techIcons.map((tech, index) => {
                 const IconComponent = tech.icon;
                 return (
                   <AboutIconsAnimation key={index} index={index}>
                     <IconComponent 
                       title={tech.name}
-                      className="text-stone-500 text-4xl sm:text-6xl md:text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
+                      className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
                     />
                   </AboutIconsAnimation>
                 );
