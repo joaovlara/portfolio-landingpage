@@ -34,9 +34,9 @@ export default function Expertise() {
                 <div className="flex items-start mb-3">
                   <span className="mr-3">•</span>
                   <div>
-                    <h4 className="mb-1">{item.company}</h4>
-                    <p className="text-neutral-300">{item.position}</p>
-                    <p className="uppercase tracking-wider mt-1 text-neutral-500">
+                    <h4 className="mb-1">{item.position}</h4>
+                    <p className="text-neutral-300">{item.company}</p>
+                    <p className="tracking-wider mt-1 text-neutral-500">
                       {item.period}
                     </p>
                   </div>
