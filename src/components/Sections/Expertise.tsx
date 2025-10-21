@@ -5,8 +5,6 @@ import type {
   EducationItem,
   SkillCategory,
 } from "@/types/type";
-import FadeUpAnimation from "@/components/Animation/FadeUpAnimation";
-import SequentialFadeUp from "@/components/Animation/SequentialFadeUp";
 
 export default function Expertise() {
   const { title, subtitle, experience, education, skills } = expertiseTexts;
@@ -15,14 +13,12 @@ export default function Expertise() {
     <section id="expertise" className="min-h-screen flex flex-col items-center justify-center">
       <div className="container p-5 space-y-3">
         {/* Expertise Header */}
-        <FadeUpAnimation>
-          <div className="">
-            <h2 className="">{title}</h2>
-            <h3 className="mb-10">{subtitle}</h3>
-          </div>
-        </FadeUpAnimation>
+        <div className="">
+          <h2 className="">{title}</h2>
+          <h3 className="mb-10">{subtitle}</h3>
+        </div>
 
-        <SequentialFadeUp className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16">
           {/* Experience Column */}
           <div className="col-span-1">
             <p className="uppercase tracking-wider textcolor-primary-500 mb-10 font-semibold">
@@ -34,9 +30,9 @@ export default function Expertise() {
                 <div className="flex items-start mb-3">
                   <span className="mr-3">•</span>
                   <div>
-                    <h4 className="mb-1">{item.position}</h4>
-                    <p className="text-neutral-300">{item.company}</p>
-                    <p className="tracking-wider mt-1 text-neutral-500">
+                    <h4 className="mb-1">{item.company}</h4>
+                    <p className="text-neutral-300">{item.position}</p>
+                    <p className="uppercase tracking-wider mt-1 text-neutral-500">
                       {item.period}
                     </p>
                   </div>
@@ -97,7 +93,7 @@ export default function Expertise() {
               </div>
             ))}
           </div>
-        </SequentialFadeUp>
+        </div>
       </div>
     </section>
   );

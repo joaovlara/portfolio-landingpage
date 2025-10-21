@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { workSection } from "@/data/data.texts";
-import SequentialFadeUp from "@/components/Animation/SequentialFadeUp";
 
 export default function Portfolio() {
   const { title, subtitle, buttonText, projects } = workSection;
@@ -26,11 +25,7 @@ export default function Portfolio() {
           <h3 className="mb-10">{subtitle}</h3>
         </div>
         {/* Portfolio grid */}
-        <SequentialFadeUp 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px"
-          staggerDelay={0.3}
-          duration={0.6}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px">
           {projects.map((project) => (
             <div 
               key={project.id} 
@@ -74,7 +69,7 @@ export default function Portfolio() {
               </div>
             </div>
           ))}
-        </SequentialFadeUp>
+        </div>
       </div>
     </section>
   );
