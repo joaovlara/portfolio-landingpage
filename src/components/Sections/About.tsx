@@ -6,7 +6,7 @@ import AboutIconsAnimation from "../Animation/AboutIconsAnimation";
 
 export default function About() {
   return (
-    <section id="about" className="relative min-h-screen flex items-center justify-center py-16 px-4 md:px-8 overflow-hidden">
+    <section id="about" className="relative flex items-center justify-center py-16 px-4 md:px-8 overflow-hidden">
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
         {/* Left side image container with relative positioning */}
         <div className="w-full md:w-1/2 flex justify-center relative">
