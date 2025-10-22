@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { aboutSection } from "@/data/data.texts";
-import AboutImageAnimation from "../Animation/AboutImageAnimation";
-import AboutContentAnimation from "../Animation/AboutContentAnimation";
-import AboutIconsAnimation from "../Animation/AboutIconsAnimation";
 
 export default function About() {
   return (
@@ -11,7 +8,7 @@ export default function About() {
         {/* Left side image container with relative positioning */}
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* The portrait image */}
-          <AboutImageAnimation className="relative h-[700px] w-[600px] md:h-[800px] md:w-[650px]">
+          <div className="relative h-[700px] w-[600px] md:h-[800px] md:w-[650px]">
             <Image 
               src={aboutSection.image.src}
               alt={aboutSection.image.alt}
@@ -26,20 +23,19 @@ export default function About() {
               {aboutSection.techIcons.map((tech, index) => {
                 const IconComponent = tech.icon;
                 return (
-                  <AboutIconsAnimation key={index} index={index}>
-                    <IconComponent 
-                      title={tech.name}
-                      className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
-                    />
-                  </AboutIconsAnimation>
+                  <IconComponent 
+                    key={index}
+                    title={tech.name}
+                    className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
+                  />
                 );
               })}
             </div>
-          </AboutImageAnimation>
+          </div>
         </div>
 
         {/* Right side content */}
-        <AboutContentAnimation className="w-full md:w-1/2 space-y-6 md:pl-4">
+        <div className="w-full md:w-1/2 space-y-6 md:pl-4">
 
           <h2 className="title-section">{aboutSection.title}</h2>
           
@@ -54,7 +50,7 @@ export default function About() {
           >
             {aboutSection.button.text}
           </a>
-        </AboutContentAnimation>
+        </div>
       </div>
     </section>
   );
