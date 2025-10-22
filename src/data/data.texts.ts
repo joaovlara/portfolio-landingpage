@@ -40,7 +40,7 @@ export const expertiseTexts = {
     title: "EXPERIÊNCIA",
     items: [
       {
-        company: "OnFocus Marketing",
+        company: "OnFocus - Marketing",
         position: "Desenvolvedor Web",
         period: "Atualmente",
         description: "Desenvolvimento e hospedagem de Websites, Landing Pages, Sites Comerciais, Sites Institucionais, Cardápios, Portfólios. Projetos com responsividade, Otimização, tecnologias atuais e boas práticas de SEO e Segurança, mantendo a identidade visual da marca."
