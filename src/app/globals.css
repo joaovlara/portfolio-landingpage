@@ -29,9 +29,8 @@ section[id] {
   --color-light-200: #f2f2f2;
   --color-light-300: #e0e0e0;
 
-  --font-family-primary: 'Montserrat', sans-serif;
-  --font-family-secondary: 'Open Sans', sans-serif;
-
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
 }
 
 @layer components {
@@ -43,12 +42,12 @@ section[id] {
 
   h2 {
     @apply text-3xl font-bold text-[var(--color-primary-100)] border-l-2 border-amber-500 pl-3 mb-10;
-    font-family: 'Bigshot One';
+    font-family: "Bigshot One";
   }
 
   h3 {
     @apply text-2xl font-semibold text-neutral-300 border-b-2 border-stone-800 pb-3;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
   }
 
   h4 {
@@ -124,13 +123,20 @@ section[id] {
   }
 
   /* Fontes Customizadas */
-  .font-bigshot {
-    font-family: 'Bigshot One', sans-serif;
-  }
-
+  
   .font-mono {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
   }
 
+  .rufina-regular {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+  .rufina-bold {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 }

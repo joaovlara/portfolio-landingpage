@@ -45,7 +45,7 @@ export default function Portfolio() {
                   alt={project.title}
                   fill
                   style={{ objectFit: "cover" }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  className="transition-transform duration-500"
                 />
 
                 {/* Overlay on hover (desktop) or click (mobile) */}
