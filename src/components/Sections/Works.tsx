@@ -20,7 +20,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="min-h-screen flex flex-col items-center justify-center">
-      <div className="container p-5 space-y-3">
+      <div className="container relative p-5 space-y-3">
         <div className="">
           <h2 className="">{title}</h2>
           <h3 className="mb-10">{subtitle}</h3>
@@ -50,7 +50,7 @@ export default function Portfolio() {
 
                 {/* Overlay on hover (desktop) or click (mobile) */}
                 <div 
-                  className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center
+                  className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer
                     ${activeCardId === project.id ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100'}`}
                 >
                   <div className="text-center p-6">
@@ -59,13 +59,10 @@ export default function Portfolio() {
                     </span>
                     <h3 className="mb-8">{project.title}</h3>
 
-                    {/* Plus icon */}
-                    <span className="block mb-8">+</span>
-
                     <Link
                       href={project.link}
                       className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
-                      onClick={(e) => e.stopPropagation()} // Prevent card click handler from firing when clicking the link
+                      onClick={(e) => e.stopPropagation()}
                     >
                       {buttonText}
                     </Link>

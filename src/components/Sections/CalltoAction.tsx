@@ -9,7 +9,7 @@ export default function Contact() {
   
   return (
     <section id="contact" className="min-h-[70vh] flex flex-col items-center justify-center bg-gradient-to-t from-stone-950">
-      <div className="container p-5 space-y-3">
+      <div className="container relative p-5 space-y-3">
         <SequentialFadeUp staggerDelay={0.4} duration={0.6}>
           <h2 className="textcolor-primary mb-10">
             {title}
