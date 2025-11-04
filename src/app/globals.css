@@ -42,7 +42,7 @@ section[id] {
 
   h2 {
     @apply text-3xl font-bold text-[var(--color-primary-100)] border-l-2 border-amber-500 pl-3 mb-10;
-    font-family: "Bigshot One";
+    font-family: "Rufina", serif;
   }
 
   h3 {
