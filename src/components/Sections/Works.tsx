@@ -19,7 +19,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="min-h-screen flex flex-col items-center justify-center">
+    <section id="portfolio" className="flex flex-col items-center justify-center">
       <div className="container relative p-5 space-y-3">
         <div className="">
           <h2 className="">{title}</h2>

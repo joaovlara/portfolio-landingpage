@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-[70vh] flex flex-col items-center justify-center bg-gradient-to-t from-stone-950"
+      className="min-h-[70vh] flex flex-col items-center justify-center bg-linear-to-t from-stone-950"
     >
       <div className="container relative p-5 space-y-3">
         <SequentialFadeUp staggerDelay={0.4} duration={0.6}>
@@ -36,7 +36,7 @@ export default function Contact() {
 
             <div>
               <h4 className="uppercase tracking-wider mb-4">{social.title}</h4>
-              <div className="flex flex-col gap-6 mt-4 md:mt-0">
+              <div className="flex flex-wrap gap-6 mt-4 md:mt-0">
                 {CtaSection.social.socialLinks.map((social) => (
                   <a
                     key={social.name}
@@ -59,6 +59,7 @@ export default function Contact() {
                 </div>
               </Link>
             </div>
+
           </SequentialFadeUp>
         </SequentialFadeUp>
       </div>
