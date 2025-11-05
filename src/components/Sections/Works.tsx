@@ -37,49 +37,44 @@ export default function Portfolio() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="relative group"
+              className="relative group overflow-hidden"
               onClick={() => handleCardClick(project.id)}
             >
-              {/* Project container with overlay on hover/click */}
-              <div className="relative h-[300px] md:h-[300px] w-full overflow-hidden">
-                {/* Project image */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "100%",
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                  }}
-                  className="transition-transform duration-500"
-                />
+              {/* Project image */}
+              <img
+                src={project.image}
+                alt={project.title}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  top: 0,
+                  left: 0,
+                }}
+                className="transition-transform duration-500"
+              />
 
-                {/* Overlay on hover (desktop) or click (mobile) */}
-                <div
-                  className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer
-                    ${
-                      activeCardId === project.id
-                        ? "opacity-100"
-                        : "opacity-0 md:group-hover:opacity-100"
-                    }`}
-                >
-                  <div className="text-center p-6">
-                    <span className="textcolor-primary-500 block mb-2">
-                      {project.category}
-                    </span>
-                    <h3 className="mb-8">{project.title}</h3>
+              {/* Overlay on hover (desktop) or click (mobile) */}
+              <div
+                className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer
+        ${
+          activeCardId === project.id
+            ? "opacity-100"
+            : "opacity-0 md:group-hover:opacity-100"
+        }`}
+              >
+                <div className="text-center p-6">
+                  <span className="textcolor-primary-500 block mb-2">
+                    {project.category}
+                  </span>
+                  <h3 className="mb-8">{project.title}</h3>
 
-                    <Link
-                      href={project.link}
-                      className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {buttonText}
-                    </Link>
-                  </div>
+                  <Link
+                    href={project.link}
+                    className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {buttonText}
+                  </Link>
                 </div>
               </div>
             </div>
