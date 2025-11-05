@@ -19,39 +19,52 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="flex flex-col items-center justify-center">
+    <section
+      id="portfolio"
+      className="flex flex-col items-center justify-center"
+    >
       <div className="container relative p-5 space-y-3">
         <div className="">
           <h2 className="">{title}</h2>
           <h3 className="mb-10">{subtitle}</h3>
         </div>
         {/* Portfolio grid */}
-        <SequentialFadeUp 
+        <SequentialFadeUp
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-px"
           staggerDelay={0.3}
           duration={0.6}
         >
           {projects.map((project) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className="relative group"
               onClick={() => handleCardClick(project.id)}
             >
               {/* Project container with overlay on hover/click */}
               <div className="relative h-[300px] md:h-[300px] w-full overflow-hidden">
                 {/* Project image */}
-                <Image
+                <img
                   src={project.image}
                   alt={project.title}
-                  fill
-                  style={{ objectFit: "cover" }}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "100%",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                  }}
                   className="transition-transform duration-500"
                 />
 
                 {/* Overlay on hover (desktop) or click (mobile) */}
-                <div 
+                <div
                   className={`absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col items-center justify-center cursor-pointer
-                    ${activeCardId === project.id ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100'}`}
+                    ${
+                      activeCardId === project.id
+                        ? "opacity-100"
+                        : "opacity-0 md:group-hover:opacity-100"
+                    }`}
                 >
                   <div className="text-center p-6">
                     <span className="textcolor-primary-500 block mb-2">

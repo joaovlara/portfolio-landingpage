@@ -12,12 +12,10 @@ export default function About() {
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* The portrait image */}
           <AboutImageAnimation className="relative h-[700px] w-[600px] md:h-[800px] md:w-[650px]">
-            <Image 
+            <img 
               src={aboutSection.image.src}
               alt={aboutSection.image.alt}
-              fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
-              priority
               className="rounded-sm"
             />
             
