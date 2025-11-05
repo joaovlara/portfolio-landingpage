@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="bg-stone-900 text-stone-300 overflow-x-hidden">
+      <body className="bg-stone-950 text-stone-300 overflow-x-hidden">
         <Header />
         {children}
         <Footer />
