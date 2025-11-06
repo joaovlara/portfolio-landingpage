@@ -48,9 +48,10 @@ export default function Footer() {
 
         {/* Right Section: Terms/Privacy */}
         <div className="flex-1 flex justify-center md:justify-end mt-6 md:mt-0">
-          <div className="text-sm">
-            Terms of Service - Privacy Policy
-          </div>
+          <p className="text-sm">
+            {footerTexts.copyright}
+
+          </p>
         </div>
       </div>
     </footer>
