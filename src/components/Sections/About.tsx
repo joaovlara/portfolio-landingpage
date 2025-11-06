@@ -27,7 +27,7 @@ export default function About() {
                   <AboutIconsAnimation key={index} index={index}>
                     <IconComponent 
                       title={tech.name}
-                      className="text-stone-500 text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
+                      className="text-stone-500 text-5xl md:text-7xl hover:text-primary-200 transition-colors cursor-pointer" 
                     />
                   </AboutIconsAnimation>
                 );
