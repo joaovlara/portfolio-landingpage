@@ -1,4 +1,4 @@
-# Landing Page com Next e Tailwind CSS
+# Landing Page com Next e Tailwind CSS 
 
 ## Como Alterar os Textos da Landing Page
 
