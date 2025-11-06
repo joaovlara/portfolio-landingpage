@@ -27,3 +27,4 @@ As imagens estão localizadas em `public/images/`. Para substituir ou adicionar 
 ## Desenvolvimento
 
 - Desenvolvido por João Lara [Linkedin](https://www.linkedin.com/in/joaovitorlara/)
+- Projeto em Desenvolvimento 
