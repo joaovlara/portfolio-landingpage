@@ -18,13 +18,12 @@ export default function Home() {
   return (
     <main>
       <Particles
-        particleColors={["#5C5C5CFF", "#B4B4B4FF"]}
-        particleCount={700}
+        particleColors={["#292929"]}
+        particleCount={130}
         particleSpread={10}
         speed={0.1}
-        particleBaseSize={30}
+        particleBaseSize={100}
         moveParticlesOnHover={false}
-        alphaParticles={true}
         disableRotation={false}
       />
       <Hero />
