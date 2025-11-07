@@ -4,16 +4,16 @@ import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaLinkedin, FaGithub, FaIn
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 export const socialLinks = [
-  { name: "WhatsApp", icon: FaWhatsapp, url: "https://wpp.me.number.com" },
-  { name: "Linkedin", icon: FaLinkedin, url: "https://linkedin.com" },
-  { name: "Github", icon: FaGithub, url: "https://github.com" },
-  { name: "Instagram", icon: FaInstagram, url: "https://instagram.com" },
+  { name: "Github", icon: FaGithub, url: "https://github.com/joaovlara"},
+  { name: "WhatsApp", icon: FaWhatsapp, url:"https://wa.me/5541998205576"},
+  { name: "Linkedin", icon: FaLinkedin, url: "https://www.linkedin.com/in/joaovlara/"},
+  // { name: "Instagram", icon: FaInstagram, url: "https://instagram.com" },
 ];
 
 export const aboutSection = {
   title: "SOBRE",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    " Eu sou o João, crio e desenvolvo aplicações e contrio coisas para internet, sou especializado em Desenvolvimento Front-End, atuando com interfaces e aplicações para Web e Mobile com foco em performance, responsividade e experiência do usuário.",
   image: {
     src: "/images/about-photo.jpg",
     alt: "Profile photo",
