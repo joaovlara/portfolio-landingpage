@@ -13,7 +13,7 @@ export const socialLinks = [
 export const aboutSection = {
   title: "SOBRE",
   description:
-    " Eu sou o João, crio e desenvolvo aplicações e contrio coisas para internet, sou especializado em Desenvolvimento Front-End, atuando com interfaces e aplicações para Web e Mobile com foco em performance, responsividade e experiência do usuário.",
+    "Eu sou o João, crio e desenvolvo aplicações e material para internet, sou especializado em Desenvolvimento Front-End, com interfaces para Web e Mobile, focando em performance, responsividade e experiência do usuário. Colaborei em Startups, Empresas e Instituições, também faço prestação de serviços para clientes individuais atuando em todo ciclo de criação e publicação do projeto. Trabalho com tecnologias atuais para desenvolvimento, programo plataformas web, landing pages, portfólios e sites comerciais. Gosto de trabalhar com criatividade e presença online para alcançar prospecções e campanhas ou solucionar problemas de maneira efetiva e otimizada.",
   image: {
     src: "/images/about-photo.jpg",
     alt: "Profile photo",
@@ -126,31 +126,31 @@ export const workSection = {
   projects: [
     {
       id: 1,
-      title: "Social Media",
-      category: "Social Media",
+      title: "Landing Pages",
+      category: "Landing Pages",
       image: "/images/Frame 3.png",
-      link: "/projects/social-media",
+      link: "https://www.onfocus.com.br/",
     },
     {
       id: 2,
-      title: "Tatiana Nascimento Heim",
-      category: "Branding",
+      title: "Desenvolvimento Mobile",
+      category: "Mobile",
       image: "/images/mobile.png",
-      link: "/projects/tatiana-nascimento",
+      link: "https://pokedex-plum-rho.vercel.app/",
     },
     {
       id: 3,
-      title: "Maria Lara Advocacia",
-      category: "Web Design",
+      title: "Website Comercial",
+      category: "Desenvolvimento Web",
       image: "/images/website-comercial.png",
-      link: "/projects/maria-lara",
+      link: "https://grupodigital.com.br/",
     },
     {
       id: 4,
-      title: "Social Media",
+      title: "Website Institucional",
       category: "Social Media",
       image: "/images/site-institucional.png",
-      link: "/projects/social-media-2",
+      link: "https://advocaciamarialara.com.br/",
     },
   ],
 };
