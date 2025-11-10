@@ -1,7 +1,7 @@
 // Centraliza todos os textos das sessões e componentes do projeto
 
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaLinkedin, FaGithub, FaInstagram, FaWhatsapp , FaAws} from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiAdobecreativecloud } from "react-icons/si";
 
 export const socialLinks = [
   { name: "Github", icon: FaGithub, url: "https://github.com/joaovlara"},
@@ -25,7 +25,8 @@ export const aboutSection = {
     { icon: FaJs, name: "JavaScript" },
     { icon: FaHtml5, name: "HTML5" },
     { icon: FaCss3Alt, name: "CSS3" },
-    { icon: SiTailwindcss, name: "TailwindCSS" },
+    { icon: FaAws, name: "AWS" },
+    { icon: SiAdobecreativecloud, name: "Adobe Creative Cloud" },
   ],
   button: {
     text: "DOWNLOAD CV",
@@ -34,7 +35,7 @@ export const aboutSection = {
 };
 
 export const expertiseTexts = {
-  title: "",
+  title: "EXPERIÊNCIAS",
   subtitle:
     "Visual Design, Branding Identity, UI Design, Product Design, Prototyping, Illustration",
   experience: {
@@ -65,14 +66,14 @@ export const expertiseTexts = {
           "Graduação Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
         period: "2022-2025",
         description:
-          "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.",
+          "Formação na area de Tecnologia da Informação, com enfase em Engenharia de Software, com objetivo de adquirir conhecimentos práticos e teoricos em programação, algoritmos, cybersegurança, análise de dados e desenvolvimento de sistemas.",
       },
       {
         institution: "Escola Conquer",
         degree: "Desenvolvimento Web Avançado",
         period: "2022-2023",
         description:
-          "Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.",
+          "Curso de especialização em Desenvolvimento Web e Front-End, com foco em desenvolver projetos reais e aplicar conhecimentos em programação com HTML5, Css, JavaScript, TypeScript, React, responsividade, hospedagem e deploy de aplicações.",
       },
     ],
   },
@@ -183,6 +184,6 @@ export const navigation = [
 ];
 
 export const footerTexts = {
-  copyright: "©2025 Todos direitos reservados",
+  copyright: "JWAO © 2025 Todos direitos reservados",
   socialLinks,
 };
