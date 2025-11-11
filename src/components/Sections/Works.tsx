@@ -69,7 +69,7 @@ export default function Portfolio() {
                   <h3 className="mb-8">{project.title}</h3>
 
                   <Link
-                    href={project.link}
+                    href={project.link} target="blank"
                     className="inline-block border border-amber-500 textcolor-primary-500 hover:bg-amber-500 hover:text-black transition-colors py-2 px-4 text-xs uppercase tracking-wider"
                     onClick={(e) => e.stopPropagation()}
                   >
