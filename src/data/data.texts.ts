@@ -129,7 +129,7 @@ export const workSection = {
       id: 1,
       title: "Landing Pages",
       category: "Landing Pages",
-      image: "/images/Frame 3.png",
+      image: "/images/landing-pages.png",
       link: "https://www.onfocus.com.br/",
     },
     {
@@ -171,7 +171,7 @@ export const CtaSection = {
   },
   button: {
     text: "Contato",
-    link: "/contact",
+    link: "https://wa.me/5541998205576",
   },
 };
 
