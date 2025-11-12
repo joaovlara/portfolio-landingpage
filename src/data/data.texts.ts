@@ -13,10 +13,10 @@ export const socialLinks = [
 export const aboutSection = {
   title: "SOBRE",
   description:
-    "Eu sou o João, crio e desenvolvo aplicações e material para internet, sou especializado em Desenvolvimento Front-End, com interfaces para Web e Mobile, focando em performance, responsividade e experiência do usuário. Colaborei em Startups, Empresas e Instituições, também faço prestação de serviços para clientes individuais atuando em todo ciclo de criação e publicação do projeto. Trabalho com tecnologias atuais para desenvolvimento, programo plataformas web, landing pages, portfólios e sites comerciais. Gosto de trabalhar com criatividade e presença online para alcançar prospecções e campanhas ou solucionar problemas de maneira efetiva e otimizada.",
+    "Eu sou o João. Crio e desenvolvo aplicações e materiais para a internet, com especialização em Desenvolvimento Front-End, criando interfaces para Web e Mobile com foco em performance, responsividade e experiência do usuário. Colaborei com startups, empresas e instituições, além de prestar serviços para clientes individuais, atuando em todo o ciclo de criação e publicação de projetos. Trabalho com tecnologias modernas de desenvolvimento, programando plataformas web, landing pages, portfólios e sites comerciais. Gosto de unir criatividade e presença online para alcançar prospecções, campanhas ou solucionar problemas de forma eficaz e otimizada.",
   image: {
     src: "/images/about-photo.jpg",
-    alt: "Profile photo",
+    alt: "Foto de perfil",
   },
   techIcons: [
     { icon: FaReact, name: "React" },
@@ -46,14 +46,14 @@ export const expertiseTexts = {
         position: "Desenvolvedor Web",
         period: "Atualmente",
         description:
-          "Desenvolvimento e hospedagem de Websites, Landing Pages, Sites Comerciais, Sites Institucionais, Cardápios, Portfólios. Projetos com responsividade, Otimização, tecnologias atuais e boas práticas de SEO e Segurança, mantendo a identidade visual da marca.",
+          "Desenvolvimento e hospedagem de websites, landing pages, sites comerciais, sites institucionais, cardápios e portfólios. Projetos com responsividade, otimização, uso de tecnologias atuais e boas práticas de SEO e segurança, mantendo a identidade visual da marca.",
       },
       {
         company: "FAE Centro Universitário",
         position: "Desenvolvedor Frontend",
         period: "Atualmente",
         description:
-          "Desenvolvimento de Aplicações Web e Interfaces para mobile e desktop, colaboração em equipes multidisciplinares, metodologia ágil, versionamento e entrega de soluções. Atuando com integrações, APIs, documentação técnica, sustentação e rotina de monitoramento.",
+          "Desenvolvimento de aplicações web e interfaces para mobile e desktop. Colaboração em equipes multidisciplinares, com metodologia ágil, versionamento e entrega de soluções. Atuação com integrações, APIs, documentação técnica, sustentação e rotina de monitoramento.",
       },
     ],
   },
@@ -66,14 +66,14 @@ export const expertiseTexts = {
           "Graduação Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
         period: "2022-2025",
         description:
-          "Formação na area de Tecnologia da Informação, com enfase em Engenharia de Software, com objetivo de adquirir conhecimentos práticos e teoricos em programação, algoritmos, cybersegurança, análise de dados e desenvolvimento de sistemas.",
+          "Formação na área de Tecnologia da Informação, com ênfase em Engenharia de Software, visando adquirir conhecimentos práticos e teóricos em programação, algoritmos, cibersegurança, análise de dados e desenvolvimento de sistemas.",
       },
       {
         institution: "Escola Conquer",
         degree: "Desenvolvimento Web Avançado",
         period: "2022-2023",
         description:
-          "Curso de especialização em Desenvolvimento Web e Front-End, com foco em desenvolver projetos reais e aplicar conhecimentos em programação com HTML5, Css, JavaScript, TypeScript, React, responsividade, hospedagem e deploy de aplicações.",
+          "Curso de especialização em Desenvolvimento Web e Front-End, com foco na criação de projetos reais e aplicação de conhecimentos em programação com HTML5, CSS, JavaScript, TypeScript, React, responsividade, hospedagem e deploy de aplicações.",
       },
     ],
   },
@@ -100,7 +100,7 @@ export const expertiseTexts = {
           "React",
           "Next.js",
           "React Native",
-          "NodeJs",
+          "Node.js",
         ],
       },
       {
@@ -109,11 +109,11 @@ export const expertiseTexts = {
           "AWS",
           "Adobe AEM",
           "Firebase",
-          "Wordpress",
+          "WordPress",
           "Jira",
           "Confluence",
           "GitHub",
-          "Google ADS",
+          "Google Ads",
         ],
       },
     ],
