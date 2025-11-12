@@ -30,7 +30,7 @@ export const aboutSection = {
   ],
   button: {
     text: "DOWNLOAD CV",
-    link: "/cv.pdf",
+    link: "https://drive.google.com/file/d/1Zyic7fu4gkKX3e4a8jyKi8ZsKgqWRqAz/view?usp=drive_link",
   },
 };
 
