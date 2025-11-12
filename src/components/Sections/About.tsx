@@ -7,9 +7,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex items-center justify-center py-16 px-4 md:px-8 overflow-hidden"
+      className="relative min-h-screen flex justify-center py-16 px-4 md:px-8 overflow-hidden"
     >
-      <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div className="max-w-6xl w-full flex flex-col md:flex-row gap-8 md:gap-16">
         {/* Left side image container with relative positioning */}
         <div className="w-full md:w-1/2 flex justify-center relative">
           {/* The portrait image */}
@@ -39,7 +39,7 @@ export default function About() {
         </div>
 
         {/* Right side content */}
-        <AboutContentAnimation className="w-full md:w-1/2 space-y-6 md:pl-4">
+        <AboutContentAnimation className="md:pt-8 w-full md:w-1/2 space-y-6 md:pl-4">
           <h2 className="title-section">{aboutSection.title}</h2>
 
           <p className="leading-relaxed text-justify">

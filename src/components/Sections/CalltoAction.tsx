@@ -14,7 +14,7 @@ export default function Contact() {
     >
       <div className="container relative p-5 space-y-3">
         <SequentialFadeUp staggerDelay={0.4} duration={0.6}>
-          <h2 className="textcolor-primary mb-10">{title}</h2>
+          <h2 className="textcolor-primary mb-10 uppercase">{title}</h2>
 
           <h3 className="leading-tight mb-16 text-neutral-200 text-4xl">
             {description}
