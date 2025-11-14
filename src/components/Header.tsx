@@ -27,12 +27,12 @@ export default function Header() {
   };
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 text-stone-500">
+    <header className="relative inset-x-0 top-0 z-50 text-stone-500">
       {/* Desktop menu */}
       <HeaderAnimation>
         <nav
           aria-label="Global"
-          className="flex items-center justify-between md:p-12 p-8 border-b"
+          className="flex items-center justify-between md:p-10 p-6 border-b"
         >
         <div className="flex lg:flex-1">
           <a 
