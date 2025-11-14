@@ -8,7 +8,7 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center"
     >
-      <HeroAnimation className="container p-5 space-y-3">
+      <HeroAnimation className="container p-5 space-y-3 relative">
         <h3 className="md:text-3xl font-mono textcolor-primary border-none">
           &lt; &gt;
         </h3>

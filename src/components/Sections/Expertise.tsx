@@ -13,7 +13,7 @@ export default function Expertise() {
 
   return (
     <section id="expertise" className="flex flex-col items-center justify-center">
-      <div className="container p-5 space-y-3">
+      <div className="container relative p-5 space-y-3">
         {/* Expertise Header */}
         <FadeUpAnimation>
           <div className="">
